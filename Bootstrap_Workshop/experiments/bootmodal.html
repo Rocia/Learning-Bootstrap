@@ -1,0 +1,104 @@
+<html>
+<head>
+<style>
+.register{display:none;}
+</style>
+<title>Modals in Bootstrap
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" href = "../css/bootstrap.min.css">
+
+</head>
+<body>
+<div class = "container">
+<h3>This is a modal</h3>
+<a class = "btn btn-primary" data-target="#abc"data-toggle="modal">MODAL</a>
+<div class = "modal" id = "abc">
+<div class = "modal-dialogue">
+<section class = "signup">
+<div class ="modal-content">
+<div class ="modal-header">
+<button class = "close"data-dismiss="modal">&times;</button>
+<h1 class = "modal-title">THIS IS A MODAL HEADER</h1>
+</div>
+<div class ="modal-body">
+<form class="form-horizontal">
+<div class = "form-group">
+<div class = "col-sm-offset-2 col-sm-2">USERNAME :</div>
+<div class = "col-sm-6"><input class = "form-control" type ="text" id = "name" placeholder= "Enter username"></div>
+</div>
+<div class = "form-group">
+<div class = "col-sm-offset-2 col-sm-2">PASSWORD :</div>
+<div class = "col-sm-6"><input class = "form-control" type ="password" id = "pwd" placeholder= "Enter password"></div>
+</div>
+<div class = "form-group">
+<div class = "col-sm-offset-5 col-sm-2">
+<a class="btn btn-success">SUBMIT</a></div>
+</div>
+</form>
+</div>
+<div class ="modal-footer">
+<div class = "col-sm-offset-4">This is a footer</div>
+<div class = "col-sm-offset-5">
+<button class="sign_up btn btn-info">SIGN UP</button>
+</div>
+</div>
+</div>
+</section>
+
+<section class = "register">
+<div class ="modal-content">
+<div class ="modal-header">
+<button class = "close"data-dismiss="modal">&times;</button>
+<h1 class = "modal-title">THIS IS A MODAL Registration HEADER</h1>
+</div>
+<div class ="modal-body">
+<form class="form-horizontal">
+<div class = "form-group">
+<div class = "col-sm-offset-2 col-sm-2">NAME :</div>
+<div class = "col-sm-6"><input class = "form-control" type ="text" id = "name" placeholder= "Enter name"></div>
+</div>
+<div class = "form-group">
+<div class = "col-sm-offset-2 col-sm-2">MOBILE NO. :</div>
+<div class = "col-sm-6"><input class = "form-control" type ="text" id = "name" placeholder= "Enter contact no."></div>
+</div>
+<div class = "form-group">
+<div class = "col-sm-offset-2 col-sm-2">EMAIL :</div>
+<div class = "col-sm-6"><input class = "form-control" type ="email" id = "name" placeholder= "Enter emailid"></div>
+</div>
+<div class = "form-group">
+<div class = "col-sm-offset-2 col-sm-2">ADDRESS :</div>
+<div class = "col-sm-6"><input class = "form-control" type ="textbox" id = "name" placeholder= "Enter current address"></div>
+</div>
+<div class = "form-group">
+<div class = "col-sm-offset-2 col-sm-2">PASSWORD :</div>
+<div class = "col-sm-6"><input class = "form-control" type ="password" id = "pwd" placeholder= "Enter password"></div>
+</div>
+<div class = "form-group">
+<div class = "col-sm-offset-5 col-sm-2"><button class="btn btn-success">REGISTER</button></div>
+</div>
+</form>
+</div>
+<div class ="modal-footer">
+Already have an account?
+<div class = "col-sm-offset-5">
+<button class="login btn btn-info">LOGIN</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+
+<script>
+$('.sign_up').click(function() { $('.signup').hide();$('.register').show(); })
+$('.login').click(function() { $('.register').hide();$('.signup').show(); })
+</script>
+
+</body>
+</html>
